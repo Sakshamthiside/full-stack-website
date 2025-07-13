@@ -19,7 +19,7 @@ export default function Home() {
 
   // Fetch data from backend when the page loads
   useEffect(() => {
-    fetch("http://localhost:5000/api/hello")
+    fetch("https://backend-api-wux3.onrender.com")
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((err) => {
